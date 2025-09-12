@@ -1,0 +1,28 @@
+blockquote {
+    border-left: 4px solid #ccc;
+    padding: 10px 40px;
+    background: #f9f9f9;
+    margin: 1em 0;
+}
+
+blockquote.info {
+    border-left-color: #3498db;
+    background: #ecf4fb;
+    padding: 1em;
+}
+
+blockquote[data-type="warning"] {
+    border-left-color: #e74c3c;
+    background: #fce9e8;
+}
+
+blockquote footer {
+    padding-top: 0.5em;
+    font-style: italic;
+    color: #666;
+    margin-top: 1.5em;
+    position: relative;
+    left: 80%;
+    transform: translateX(-20%); /* Adjusts back slightly to fine-tune */
+    text-align: left;
+}

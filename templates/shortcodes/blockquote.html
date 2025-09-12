@@ -1,0 +1,19 @@
+<blockquote
+    {%
+    if
+    class
+    %}class="{{ class }}"
+    {%
+    endif
+    %}{%
+    if
+    typev
+    %}data-type="{{ type }}"
+    {%
+    endif
+    %}
+>
+    {{ body | safe}} {% if author %}
+    <footer>{{ author }}</footer>
+    {% endif %}
+</blockquote>
