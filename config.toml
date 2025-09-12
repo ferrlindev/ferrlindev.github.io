@@ -25,3 +25,7 @@ comments = false
 github = "https://github.com/ferrlindev"
 enable_search = true
 codeblock = true
+
+favicon = false
+favicon_url = "favicons/favicon.ico"
+favicon_mimetype = "image/x-icon"
