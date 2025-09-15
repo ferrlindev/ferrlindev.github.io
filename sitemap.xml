@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https;//github.io/ferrlindev/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/categories/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/categories/organizer/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/categories/project/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/manage-files-on-my-machine/</loc>
+        <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/page/1/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/tags/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/tags/architecture/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/tags/example/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/tags/high-level/</loc>
+    </url>
+    <url>
+        <loc>https;//github.io/ferrlindev/tags/mermaid/</loc>
+    </url>
+</urlset>

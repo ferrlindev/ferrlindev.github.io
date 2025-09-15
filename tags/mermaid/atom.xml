@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - mermaid</title>
+    <link rel="self" type="application/atom+xml" href="https;//github.io/ferrlindev/tags/mermaid/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https;//github.io/ferrlindev"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <id>https;//github.io/ferrlindev/tags/mermaid/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Manage files on my machine</title>
+        <published>2025-09-09T00:00:00+00:00</published>
+        <updated>2025-09-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https;//github.io/ferrlindev/manage-files-on-my-machine/"/>
+        <id>https;//github.io/ferrlindev/manage-files-on-my-machine/</id>
+        
+        <content type="html" xml:base="https;//github.io/ferrlindev/manage-files-on-my-machine/">&lt;blockquote
+    class=&quot;info&quot;
+    
+&gt;
+    &quot;A journey of a thousand miles begins with a single step&quot; 
+    &lt;footer&gt;Lao Tzu&lt;&#x2F;footer&gt;
+    
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I’m struck by a familiar feeling: my computer is a mess. Scattered files, half-finished projects, and random &quot;temp&quot; folders clogging up my drive—it’s chaos. Sound familiar? Just like Lao Tzu said, “A journey of a thousand miles begins with a single step,” and for me, that first step is cleaning up my machine. It’s not just about freeing up disk space; it’s about clearing the mental clutter to make room for creativity, focus, and a bold new project.&lt;&#x2F;p&gt;
+&lt;p&gt;Like all small step, we will begin with a simple idea to jumpstart the intention. Monitoring these directories are a good start and it will nag me constantly until an action is taken.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-is-the-idea&quot;&gt;What is the idea?&lt;&#x2F;h2&gt;
+&lt;p&gt;At its core, this project is about creating a service that monitors one or more designated directories for changes—such as file creations, modifications, deletions, or renames. When a change is detected, the system generates a stream of structured event data that can be consumed by a notification service. This could trigger alerts via email, push notifications, webhooks, or other channels, depending on your needs.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;mermaid&quot;&gt;
+flowchart LR
+    B[Monitoring]
+    G[Aggregator]
+    H[Notifier]
+
+    A@{ shape: lin-cyl, label: &amp;quot;Directory 1&amp;quot;} --&amp;gt;|New Event| B
+    C@{ shape: lin-cyl, label: &amp;quot;Directory 2&amp;quot;} --&amp;gt;|Modify Event| B
+    B --&amp;gt;|publishes| G
+    G --&amp;gt;|subscribed by| H
+    H --&amp;gt;I[Email]
+    H --&amp;gt;J[Push]
+&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;how-it-works-high-level&quot;&gt;How It Works (High-Level)&lt;&#x2F;h2&gt;
+&lt;p&gt;The system will leverage file system APIs to detect changes in real time. Once a change is detected, the event is processed and formatted into a standardized structure, then pushed to a configurable output stream. This stream can be consumed by a notification service, which could range from a simple logging mechanism to a sophisticated messaging queue.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-s-next&quot;&gt;What&#x27;s next?&lt;&#x2F;h2&gt;
+&lt;p&gt;In the planning and prototyping phase, I will be focusing on:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Selecting the right tools and libraries for cross-platform compatibility and performance.&lt;&#x2F;li&gt;
+&lt;li&gt;Designing a flexible &lt;code&gt;event&lt;&#x2F;code&gt; format that balances detail and simplicity.&lt;&#x2F;li&gt;
+&lt;li&gt;Exploring how to make the event stream plug-and-play with popular notification services.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This is just getting started so expect more technical deep dives, progress updates, and eventually, a working prototype in the days to follow.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
