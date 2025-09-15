@@ -16,10 +16,7 @@ jobs:
           submodules: "recursive" # Initialize and update submodules (Radion theme)
 
       - name: Install Zola
-        run: |
-          cargo install zola
-          sudo mv ~/.cargo/bin/zola /usr/local/bin/zola
-          sudo chmod +x /usr/local/bin/zola
+        run: cargo install zola
 
       - name: Debug Zola
         run: |
