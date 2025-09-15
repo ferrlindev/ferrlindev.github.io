@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https;//ferrlindev.github.io/</loc>
+        <loc>/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/categories/</loc>
+        <loc>/categories/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/categories/organizer/</loc>
+        <loc>/categories/organizer/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/categories/project/</loc>
+        <loc>/categories/project/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/manage-files-on-my-machine/</loc>
+        <loc>/manage-files-on-my-machine/</loc>
         <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/page/1/</loc>
+        <loc>/page/1/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/tags/</loc>
+        <loc>/tags/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/tags/architecture/</loc>
+        <loc>/tags/architecture/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/tags/example/</loc>
+        <loc>/tags/example/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/tags/high-level/</loc>
+        <loc>/tags/high-level/</loc>
     </url>
     <url>
-        <loc>https;//ferrlindev.github.io/tags/mermaid/</loc>
+        <loc>/tags/mermaid/</loc>
     </url>
 </urlset>
