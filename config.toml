@@ -1,4 +1,4 @@
-base_url = ""
+base_url = "/"
 
 theme = "radion"
 build_search_index = true
