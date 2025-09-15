@@ -1,44 +1,43 @@
 name: Build and deploy GH Pages
 
 on:
-  push:
-    branches: [gh-pages-main]
+    push:
+        branches:
+            - gh-pages-main
 
 jobs:
-  build:
-    if: github.ref == 'refs/heads/gh-pages-main'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: "recursive" # Initialize and update submodules (Radion theme)
+    build-deploy:
+        if: github.ref == 'refs/heads/gh-pages-main'
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  submodules: "recursive" # Initialize and update submodules (Radion theme)
 
-      - name: Install Zola
-        run: |
-          rustup target add x86_64-unknown-linux-gnu
-          wget -O - https://github.com/getzola/zola/releases/download/v0.21.0/zola-v0.21.0-aarch64-unknown-linux-gnu.tar.gz | tar xzf -
-          sudo mv zola /usr/local/bin
+            - name: Install Zola
+              run: cargo install zola
 
-      - name: Build site
-        run: zola build
+            - name: Build site
+              run: zola build
 
-      - name: Upload static files as artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public/
+            - name: Deploy to Github Pages
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./public
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/gh-pages-main'
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    # deploy:
+    # needs: build
+    # runs-on: ubuntu-latest
+    # if: github.ref == 'refs/heads/gh-pages-main'
+    # permissions:
+    # pages: write
+    # id-token: write
+    # environment:
+    # name: github-pages
+    # url: ${{ steps.deployment.outputs.page_url }}
+    # steps:
+    # - name: Deploy to GitHub Pages
+    # id: deployment
+    # uses: actions/deploy-pages@v4
