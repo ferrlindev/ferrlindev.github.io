@@ -1,4 +1,4 @@
-base_url = "/"
+base_url = "https://ferrlindev.github.io"
 
 theme = "radion"
 build_search_index = true
