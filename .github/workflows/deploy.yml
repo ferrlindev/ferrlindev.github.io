@@ -23,7 +23,11 @@ jobs:
           override: true
 
       - name: Install Zola
-        run: cargo install zola
+        run: |
+          cargo install zola --version 0.21.0
+
+      - name: Clear cache
+        run: rm -rf ~/.cargo/registry ~/.cargo/git
 
       - name: Debug Zola
         run: |
