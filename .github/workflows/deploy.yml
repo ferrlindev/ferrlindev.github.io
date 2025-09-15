@@ -7,36 +7,17 @@ on:
 
 jobs:
   build-deploy:
-    # if: github.ref == 'refs/heads/gh-pages-main'
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           submodules: "recursive" # Initialize and update submodules (Radion theme)
 
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          profile: minimal
-          override: true
-
-      - name: Install Zola
+      - name: Install  and Run Zola
         run: |
-          cargo install zola --version 0.21.0
-
-      - name: Clear cache
-        run: rm -rf ~/.cargo/registry ~/.cargo/git
-
-      - name: Debug Zola
-        run: |
-          file /usr/local/bin/zola
-          ldd /usr/local/bin/zola
-          /usr/local/bin/zola --version
-
-      - name: Build site
-        run: /usr/local/bin/zola build --verbose
+          sudo snap install --edge zola
+          zola build --verbose
 
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v4
