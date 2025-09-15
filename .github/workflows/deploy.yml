@@ -15,9 +15,6 @@ jobs:
         with:
           submodules: "recursive" # Initialize and update submodules (Radion theme)
 
-      - name: Clear Cargo cache
-        run: rm -rf ~/.cargo/registry ~/.cargo/git
-
       - name: Install Zola
         run: |
           cargo install zola
