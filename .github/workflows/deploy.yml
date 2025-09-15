@@ -15,6 +15,13 @@ jobs:
         with:
           submodules: "recursive" # Initialize and update submodules (Radion theme)
 
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+
       - name: Install Zola
         run: cargo install zola
 
