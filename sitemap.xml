@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https;//github.io/ferrlindev/</loc>
+        <loc>https;//ferrlindev.github.io/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/categories/</loc>
+        <loc>https;//ferrlindev.github.io/categories/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/categories/organizer/</loc>
+        <loc>https;//ferrlindev.github.io/categories/organizer/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/categories/project/</loc>
+        <loc>https;//ferrlindev.github.io/categories/project/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/manage-files-on-my-machine/</loc>
+        <loc>https;//ferrlindev.github.io/manage-files-on-my-machine/</loc>
         <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/page/1/</loc>
+        <loc>https;//ferrlindev.github.io/page/1/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/tags/</loc>
+        <loc>https;//ferrlindev.github.io/tags/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/tags/architecture/</loc>
+        <loc>https;//ferrlindev.github.io/tags/architecture/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/tags/example/</loc>
+        <loc>https;//ferrlindev.github.io/tags/example/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/tags/high-level/</loc>
+        <loc>https;//ferrlindev.github.io/tags/high-level/</loc>
     </url>
     <url>
-        <loc>https;//github.io/ferrlindev/tags/mermaid/</loc>
+        <loc>https;//ferrlindev.github.io/tags/mermaid/</loc>
     </url>
 </urlset>
