@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Zola
         run: |
-          cargo install zola --version 0.19.1
+          cargo install zola
           sudo mv ~/.cargo/bin/zola /usr/local/bin/zola
           sudo chmod +x /usr/local/bin/zola
 
