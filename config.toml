@@ -1,4 +1,4 @@
-base_url = "https;//ferrlindev.github.io"
+base_url = ""
 
 theme = "radion"
 build_search_index = true
@@ -22,7 +22,6 @@ radion_menu = [
 theme = "toggle"
 toc = true
 comments = false
-github = "https://github.com/ferrlindev"
 enable_search = true
 codeblock = true
 
