@@ -1,0 +1,14 @@
+{# templates/base.html #}
+{% extends 'radion/templates/_base.html' %}
+
+{% block styles %}
+<link
+    rel="stylesheet"
+    href="{{ get_url(path='css/custom.css', trailing_slash=false) | safe }}"
+/>
+{% endblock styles %}
+
+{% block head %}
+    {{ super() }}
+    <script src="{{ get_url(path="")}}" defer></script>/>
+{% endblock head %}
